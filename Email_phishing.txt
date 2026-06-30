@@ -1,0 +1,19 @@
+From: Microsoft Account Team <support@microsoft-securityverify.com> 
+ To: adeshgshitole96@gmail.com
+ Subject: Action Required: Unusual Sign-in Attempt Detected 
+ Date: 30 June 2026 
+ Dear User, 
+ We detected an unusual sign-in attempt to your Microsoft account from an unknown device 
+ located in another country. 
+ To keep your account secure, you must verify your identity immediately by clicking the link 
+ below: 
+ https:/login.microsoft-secureverify.com/authentication 
+ Failure to verify your account within 12 hours will result in your account being temporarily 
+ disabled to protect your personal information. 
+ During the verification process, you may be asked to confirm: 
+ ● Microsoft account email address● Password 
+ ● Recovery phone number 
+ If you believe this alert was sent in error, please complete the verification process to restore 
+ normal access. 
+ Thank you, 
+ Microsoft Security Team

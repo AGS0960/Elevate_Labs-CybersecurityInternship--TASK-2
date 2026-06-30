@@ -1,0 +1,95 @@
+1. Examine the Sender's Email Address for Spoofing 
+
+ Sender Email: 
+ support@microsoft-securityverify.com 
+
+ Observation 
+ ● The sender attempts to impersonate Microsoft. 
+ ● The domain microsoft-securityverify.com is not an oficial Microsoft domain. 
+ ● Attackers often register look-alike domains to deceive users. 
+ ● The display name "Microsoft Account Team" is intended to make the email appear 
+ legitimate. 
+ 
+
+ 2. Check Email Headers for Discrepancies 
+
+ Sample Header Analysis 
+ ● Return-Path: support@microsoft-securityverify.com 
+ ● Received: Email originated from an unknown mail server. 
+ ● SPF: Failed 
+ ● DKIM: Not Present● DMARC: Failed 
+ 
+Findings 
+ ● SPF authentication failed. 
+ ● No DKIM signature was found. 
+ ● DMARC validation failed. 
+ ● The sender's domain is not trusted. 
+ ● The email originated from an unknown server rather than Microsoft's oficial mail 
+ servers. 
+ 
+
+ 3. Identify Suspicious Links and Attachments 
+
+ Suspicious Link 
+ https://login.microsoft-secureverify.com/authentication 
+ 
+Analysis 
+ ● The domain is not owned by Microsoft. 
+ ● It attempts to imitate an oficial Microsoft login page. 
+ ● The purpose is likely to steal user credentials. 
+
+ Attachments 
+ No attachments were included in the email. 
+ 
+
+4. Look for Urgent or Threatening Language 
+
+The following statements create urgency and fear: 
+ ● "You must verify your identity immediately." 
+ ● "Failure to verify your account within 12 hours will result in your account being 
+ temporarily disabled." 
+ ● "We detected an unusual sign-in attempt." 
+ 
+Analysis 
+ The attacker pressures the recipient to act quickly without verifying the authenticity of the 
+ email. 
+ 
+
+ 
+5. Note Any Mismatched URLs 
+ 
+Displayed Link 
+ https://login.microsoft.com 
+
+ Actual Destination 
+ https://login.microsoft-secureverify.com/authentication 
+
+ Analysis 
+ Although the displayed text appears to point to Microsoft's oficial website, the actual 
+ destination is a fake domain controlled by attackers. 
+ 
+
+ 6. Verify Presence of Spelling or Grammar Errors 
+
+Observations
+● No significant spelling mistakes were identified. 
+ ● The email contains awkward wording and unnatural sentence construction. 
+ ● The writing style is overly aggressive and threatening. 
+ 
+
+ 7. Summary of Phishing Traits Found 
+
+The following phishing characteristics were identified: 
+ 
+ Spoofed sender address : ✔ Detected 
+ Fake domain : ✔ Detected 
+ SPF authentication failure : ✔ Detected 
+ DKIM missing : ✔ Detected 
+ DMARC failure : ✔ Detected 
+ Suspicious link : ✔ Detected 
+ Mismatched URL : ✔ Detected 
+ Urgent language : ✔ Detected 
+ Threatening language : ✔ Detected 
+ Request for sensitive information : ✔ Detected 
+ Generic greeting : ✔ Detected 
+ Grammar/style issues : ✔ Detected
